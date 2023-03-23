@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Crawleer",
+  "version": "1.1.0",
+  "background.service_worker": ["/js/background.js"],
+  "description": "Crawleer is a web crawler that helps you to find the most relevant information on the web.",
+
+  "action": {
+    "default_icon": "/img/favicon.png",
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "/img/favicon.png",
+    "48": "/img/favicon.png",
+    "128": "/img/favicon.png"
+  },
+  "permissions": [
+    "storage",
+    "cookies",
+    "tabs"
+  ],
+  "host_permissions": [
+    "*://*/*"
+  ]
+}

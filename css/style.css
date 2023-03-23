@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #252525;
+    width: 300px;
+    margin: 0;
+}
+
+/* Header */
+
+.header {
+    background-color: #353535;
+    width: 100%;
+    height: 66px;
+    top: 0;
+}
+
+.header-text {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: poppins;
+    text-align: center;
+}
+
+.header-text h1 {
+    padding-top: 1px;
+}
+
+/* Content */
+
+.content {
+    width: 100%;
+    height: calc(100% - 86px); /* set the height to the remaining space */
+    top: 66px;
+    display: flex; /* add display flex to align items */
+    flex-direction: column; /* add flex direction column to stack items vertically */
+}
+
+.box {
+  flex-grow: 1; /* use flex-grow to make the box take up remaining space */
+  border-radius: 10px;
+  margin: 30px;
+}
+
+.entries {
+  background-color: #353535;
+  width: 100%;
+  padding: 5px;
+}
+
+.entries-dark {
+  background-color: #454545;
+  width: 100%;
+  padding: 5px;
+}
+
+.entries a {
+  color: #fff;
+  font-size: 12px;
+  font-weight: normal;
+  font-family: poppins;
+  text-decoration: none;
+  padding: 10px;
+  margin: 10px;
+  text-align: left;
+  word-wrap: break-word;
+}
+
+.first {
+  border-radius: 10px 10px 0 0;
+}
+
+.last {
+  border-radius: 0 0 10px 10px;
+}
+
+/* Button */
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button__start {
+background-color: #353535;
+border: none;
+color: #fff;
+font-size: 32px;
+font-weight: bold;
+font-family: poppins;
+padding: 15px 44px;
+border-radius: 10px;
+margin: 20px;
+}
+
+.button__start:hover {
+  background-color: #3535359c;
+}
+
+.button__start:active {
+  background-color: #3535353a;
+}
+
+.button__start:disabled {
+  background-color: #353535;
+  color: #454545;
+}
